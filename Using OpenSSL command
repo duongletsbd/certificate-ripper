@@ -1,0 +1,2 @@
+OpenSSL command to export public certificates to pem format
+$ ex +'g/BEGIN CERTIFICATE/,/END CERTIFICATE/p' <(echo | openssl s_client -showcerts -connect www.ifuvi.com:443) -scq > file.crt
